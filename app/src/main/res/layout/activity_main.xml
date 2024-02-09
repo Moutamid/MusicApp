@@ -1,103 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/splash_img"
     tools:context=".MainActivity">
 
-    <ScrollView
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/lato_black"
+        android:text="Best Songs \nHeal &amp; Happy \nyour Souls"
+        android:textColor="@color/white"
+        android:textSize="36dp" />
+
+    <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_bg" />
 
-        <LinearLayout
-            android:id="@+id/layout_linear"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
+    <ImageView
+        android:id="@+id/favourite"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="33dp"
 
-            <Button
-                android:id="@+id/btn_red"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginBottom="6dp"
-                android:background="@color/red"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="4dp"
-                android:onClick="playnote1"/>
+        android:src="@drawable/fav" />
 
-            <Button
-                android:id="@+id/btn_orange"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="6dp"
-                android:background="@color/orange"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="111dp"
-                android:onClick="playnote2"/>
+    <ImageView
+        android:id="@+id/play_list"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/playlist"
+        android:visibility="gone" />
 
-            <Button
-                android:id="@+id/btn_yellow"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="6dp"
-                android:background="@color/yellow"
-                android:onClick="playnote3"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp" />
 
-            <Button
-                android:id="@+id/btn_turquoise"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="6dp"
-                android:background="@color/turquoise"
-                android:onClick="playnote4"/>
-
-            <Button
-                android:id="@+id/btn_green"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="6dp"
-                android:background="@color/green"
-                android:onClick="playnote5"/>
-
-            <Button
-                android:id="@+id/btn_blue"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginBottom="6dp"
-                android:background="@color/blue"
-                android:onClick="playnote6"/>
-
-            <Button
-                android:id="@+id/btn_purple"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="6dp"
-                android:background="@color/purple"
-                android:onClick="playnote7"/>
-
-            <Button
-                android:id="@+id/btn_pink"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="35dp"
-                android:layout_marginBottom="6dp"
-                android:background="@color/pink"
-                android:onClick="playnote8"/>
-
-        </LinearLayout>
-    </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

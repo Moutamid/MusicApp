@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/splash_img"
+    tools:context=".SplashActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99424049" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="130dp"
+        android:fontFamily="@font/lato_black"
+        android:text="Enjoy your\nfavorite\nmusic"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="35dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/lato_bold"
+        android:text="Get Started"
+        android:textColor="@color/white"
+android:onClick="start"
+
+        android:textSize="14dp" />
+</RelativeLayout>
