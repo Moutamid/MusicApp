@@ -20,23 +20,27 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    static ArrayList<String> songList = new ArrayList<>();
+    static ArrayList<String> songnameList = new ArrayList<>();
+    static ArrayList<String> songnameDescriptionList = new ArrayList<>();
+    static int[] imageResources ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         // Sample data - list of song names and corresponding image resources
         ArrayList<String> songList = new ArrayList<>();
-        songList.add("note1_c");
-        songList.add("note2_d");
-        songList.add("note3_e");
-        songList.add("note4_f");
-        songList.add("note5_g");
-        songList.add("note6_a");
-        songList.add("note7_b");
-        songList.add("note8_c");
-        ArrayList<String> songnameList = new ArrayList<>();
+        songList.add("song1");
+        songList.add("song2");
+        songList.add("song3");
+        songList.add("song4");
+        songList.add("song5");
+        songList.add("song6");
+        songList.add("song7");
+
+
+        songnameList = new ArrayList<>();
         songnameList.add("David Bowie");
         songnameList.add("Nine Inch Nails");
         songnameList.add("Tori Amos");
@@ -44,9 +48,8 @@ public class MainActivity extends AppCompatActivity {
         songnameList.add("Madonna");
         songnameList.add("Janet Jackson ");
         songnameList.add("Reflections of Hope");
-        songnameList.add("Broken Pieces");
 
-        ArrayList<String> songnameDescriptionList = new ArrayList<>();
+        songnameDescriptionList = new ArrayList<>();
         songnameDescriptionList.add("The Rise and Fall of Ziggy Stardust");
         songnameDescriptionList.add("Pretty Hate Machine");
         songnameDescriptionList.add("Little Earthquakes");
@@ -54,11 +57,8 @@ public class MainActivity extends AppCompatActivity {
         songnameDescriptionList.add("The Cross of Changes");
         songnameDescriptionList.add("The Immaculate Collection");
         songnameDescriptionList.add("The Velvet Rope");
-        songnameDescriptionList.add("Chasing the Horizon");
 
-        // Add more songs as needed
-
-        int[] imageResources = new int[]{
+        imageResources = new int[]{
                 R.drawable.pic1,
                 R.drawable.pic2,
                 R.drawable.pic3,
@@ -66,8 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.pic5,
                 R.drawable.pic6,
                 R.drawable.pic7,
-                R.drawable.pic8
-                // Add more image resources corresponding to songs
         };
 
         // RecyclerView setup
