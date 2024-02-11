@@ -302,6 +302,7 @@ public class MusicPlayerActivity extends AppCompatActivity implements MediaPlaye
     }
 
     @Override
+
     protected void onDestroy() {
         super.onDestroy();
         if (mediaPlayer != null) {
