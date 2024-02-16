@@ -165,7 +165,7 @@ public class MusicPlayerActivity extends AppCompatActivity implements MediaPlaye
 
         song_name.setText(songList.get(currentPosition).getName());
         artist_name.setText(songList.get(currentPosition).getDescription());
-        song_image_view.setImageResource(songList.get(currentPosition).getImageResourceId());
+//        song_image_view.setImageResource(songList.get(currentPosition).getImageResourceId());
         playButton.setImageResource(R.drawable.ic_baseline_pause);
 
         duration_total.setText(formatted(mediaPlayer.getDuration() / 1000));
@@ -200,7 +200,7 @@ public class MusicPlayerActivity extends AppCompatActivity implements MediaPlaye
 
         song_name.setText(songList.get(currentPosition).getName());
         artist_name.setText(songList.get(currentPosition).getDescription());
-        song_image_view.setImageResource(songList.get(currentPosition).getImageResourceId());
+//        song_image_view.setImageResource(songList.get(currentPosition).getImageResourceId());
         playButton.setImageResource(R.drawable.ic_baseline_pause);
 
         duration_total.setText(formatted(mediaPlayer.getDuration() / 1000));
@@ -222,7 +222,7 @@ public class MusicPlayerActivity extends AppCompatActivity implements MediaPlaye
 
         song_name.setText(songList.get(currentPosition).getName());
         artist_name.setText(songList.get(currentPosition).getDescription());
-        song_image_view.setImageResource(songList.get(currentPosition).getImageResourceId());
+//        song_image_view.setImageResource(songList.get(currentPosition).getImageResourceId());
         playButton.setImageResource(R.drawable.ic_baseline_pause);
         duration_total.setText(formatted(mediaPlayer.getDuration() / 1000));
         playNextOrPreviousSong();
@@ -241,7 +241,7 @@ public class MusicPlayerActivity extends AppCompatActivity implements MediaPlaye
         Song currentSong = songList.get(currentPosition);
         song_name.setText(currentSong.getName());
         artist_name.setText(currentSong.getDescription());
-        song_image_view.setImageResource(currentSong.getImageResourceId());
+//        song_image_view.setImageResource(currentSong.getImageResourceId());
 
         duration_total.setText(formatted(mediaPlayer.getDuration() / 1000));
 

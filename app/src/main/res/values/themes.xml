@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MusicApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">#D11857</item>
-         <item name="colorPrimaryDark">#D11857</item>
+         <item name="colorPrimary">#494949</item>
+         <item name="colorPrimaryDark">#494949</item>
     </style>
 
     <style name="Theme.MusicApp" parent="Base.Theme.MusicApp" />

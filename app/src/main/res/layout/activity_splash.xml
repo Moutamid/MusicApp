@@ -3,36 +3,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:background="@drawable/splash_img"
+    android:background="@drawable/bg"
     tools:context=".SplashActivity">
 
-    <View
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#99424049" />
+        android:layout_height="251dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logo" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/lyt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lyt2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/top_left"
+            android:drawableStart="@drawable/play_btn"
+            android:fontFamily="@font/lato_bold"
+            android:onClick="start"
+            android:drawableTint="#338E36"
+            android:paddingStart="18dp"
+
+            android:text="Play Songs"
+            android:textAllCaps="false"
+            android:textColor="#000"
+
+            android:textSize="14dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/top_right"
+            android:fontFamily="@font/lato_bold"
+            android:onClick="start"
+            android:drawableStart="@drawable/love"
+            android:paddingStart="12dp"
+            android:text="Favourites"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt2"
+
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="130dp"
-        android:fontFamily="@font/lato_black"
-        android:text="Enjoy your\nfavorite\nmusic"
-        android:textColor="@color/white"
-        android:textSize="40dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="35dp"
-        android:background="@drawable/btn_bg"
-        android:fontFamily="@font/lato_bold"
-        android:text="Get Started"
-        android:textColor="@color/white"
-android:onClick="start"
+        >
 
-        android:textSize="14dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_left"
+            android:drawableStart="@drawable/our_application"
+            android:fontFamily="@font/lato_bold"
+            android:onClick="our_application"
+            android:drawableTint="#3F51B5"
+            android:paddingStart="12dp"
+            android:text="Our Application"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_right"
+            android:fontFamily="@font/lato_bold"
+            android:onClick="rate_us"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/star"
+            android:paddingStart="12dp"
+            android:text="Rate Us"
+            android:textAllCaps="false"
+
+            android:textSize="14dp" />
+    </LinearLayout>
+
 </RelativeLayout>
